@@ -1,5 +1,5 @@
 Name:		python-fsspec
-Version:	2026.6.0
+Version:	2026.7.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/f/fsspec/fsspec-%{version}.tar.gz
 Summary:	File-system specification
