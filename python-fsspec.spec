@@ -1,5 +1,5 @@
 Name:		python-fsspec
-Version:	2026.7.0
+Version:	2026.9.0
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/f/fsspec/fsspec-%{version}.tar.gz
 Summary:	File-system specification
@@ -14,6 +14,10 @@ BuildArch:	noarch
 
 %description
 File-system specification
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{py_sitedir}/fsspec
